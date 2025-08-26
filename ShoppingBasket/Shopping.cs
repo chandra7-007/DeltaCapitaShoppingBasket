@@ -9,7 +9,7 @@ namespace ShoppingBasket
             decimal totalPriceOfBasket = 0.0m;
             int melonOffer = 0;
             int limeOffer = 0;
-            if (input)
+            if (string.IsNullOrEmpty(input))
             {
                 Console.WriteLine("No items provided.");
                 return totalPriceOfBasket;
